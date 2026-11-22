@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Giuliano Ferreira | TOTVS Protheus</title>
+  <meta name="description"
+    content="Portfólio de Giuliano Ferreira: desenvolvimento e sustentação do ERP TOTVS Protheus com ADVPL, TLPP, APIs REST e PO UI (Angular).">
+  <script>
+    // aplica o tema salvo (escuro por padrão) antes de desenhar a página, evitando o "piscar" do tema claro
+    (function () {
+      var theme;
+      try { theme = localStorage.getItem("theme"); } catch (e) { }
+      if (!theme) theme = "dark";
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -20,22 +31,26 @@
     <div class="navbar">
       <a href="#home">Home</a>
       <a href="#about">Sobre</a>
+      <a href="#experience">Experiência</a>
       <a href="#projects">Projetos</a>
       <a href="#services">Serviços</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ativar tema escuro">
+        <i class="fas fa-moon"></i>
+      </button>
     </div>
   </nav>
 
   <section id="home">
     <div class="presentation">
 
-      <div class="self-image"><img src="My_photo_Cartoon-removebg-preview.png" alt=""></div>
+      <div class="self-image"><img src="My_photo_Cartoon-removebg-preview.png" alt="Ilustração de Giuliano Ferreira"></div>
       <div class="text">
         <h1>Olá, sou o <span class="highlight-name">Giuliano</span></h1>
-        <h2>Analista de Dados</h2>
+        <h2>Analista de Sistemas <br> TOTVS Protheus</h2>
+        <p class="tech-stack">ADVPL - TLPP - APIs REST - PO UI </p>
         <div class="contact-buttons">
           <a href="https://wa.me/5561991330547" target="_blank" class="btn whatsapp">
             <i class="fab fa-whatsapp"></i> Fale Comigo
-          </a>
           </a>
           <a href="Curriculo-Giuliano-Ferreira.pdf" target="_blank" class="btn cv">
             <i class="fas fa-file-pdf"></i> Baixar Currículo
@@ -64,53 +79,103 @@
 
         <h1>Sobre</h1>
 
-        <h2>Há mais de dois anos desenvolvendo projetos focados em processos de ETL, tenho atuando na importação de
-          Dados
-          Brutos de Servidores externos para tratamento e transformação em Dados devidamente Estruturados. Feita a
-          organização dos Dados, atuo na elaboração de Dashboards interativos focados nas Análises Descritiva,
-          Prescritiva, Preditiva e Diagnóstica. Procuro fornecer insights que ajudam a definir metas claras baseado na
-          estratégia das OKR's.</h2>
+        <h2>Com sólida experiência no desenvolvimento e suporte com o ERP TOTVS Protheus e com ADVPL, TLPP, APIs REST e PO UI (Angular).
+          Atua como Auxiliar de Analista de Sistemas no Grupo Zancanaro (agronegócio), nos módulos de Compras,
+          Estoque/Custos, Faturamento, Financeiro e Gestão do Agronegócio.</h2>
 
-        <h2>Apaixonado pelo universo dos Dados, tenho buscado desenvolver soluções robustas e seguras para armazenamento
-          em Banco de Dados, com o uso de Triggers e Procedures para manter a segurança e a integridade dos SGBDs, além
-          de
-          automatizar diversas tarefas.</h2>
+        <h2>Além do desenvolvimento, participou da atualização de release do Protheus 12.1.2410 para 12.1.2510 em quatro
+          bases do grupo, atuando na preparação do ambiente, atualização de AppServer, DbAccess, RPO e TSS, atualização
+          de dicionário via UPDDISTR e validação pós-virada.</h2>
 
-        <h2>No Front-End, possuo experiência prática no consumo de API's e na utilização das ferramentas de
-          Local/Session Storage, assim como no uso de recursos de estilização como Scroll e Parallax, carrosséis e
-          também na responsividade. <br> <br>
-          Possuo certificações reconhecidas, como:
-          <P>- Bootcamp Análise de Dados Randstad - DIO (C.H 102 horas - Mais de 10 Desafios de Projeto e 44 cursos
-            realizados utilizando ferramentas como Azure, MySQL, Copilot e Power BI).
-            <br>- Bootcamp TQI - Modernização com GenAI - DIO (C.H 37 horas - Mais de 21 cursos e 02 desafios de projeto
-            utilizando ferramentas como
-            Lambda AWS, Amazon S3, EC2, EBS, além de técnicas de clean code e
-            Engenharia de Prompt).
-            <br>- Desenvolvedor Front-End - SENAI DF - 240 horas (presencial).
-            <br>- Admin. de Banco de Dados - SENAI DF - 240 Horas (presencial).
-            <br>- Engenharia de Dados com Databricks, Spark e PySpark - Udemy - 5 horas.
-          </P>
+        <h2>Complementa o trabalho com SQL, análise de dados (Power BI, Power Query) e integração de NF-e. Formação em
+          Engenharia da Computação pelo IESB. <br> <br>
+          Formações em destaque:
+          <p>- Protheus 12 – Arquitetura e Instalação na Prática - Udemy (3,5 h).
+            <br>- Protheus – Configurador na Prática - Udemy (3 h).
+            <br>- Aprenda ERP TOTVS Protheus na prática – Compras - Udemy (6 h).
+            <br>- Administração de Banco de Dados - SENAI DF (240 h, presencial).
+            <br>- Desenvolvedor Front-End - SENAI DF (240 h, presencial).
+            <br>- Bootcamp Análise de Dados Randstad - DIO (102 h).
+          </p>
         </h2>
       </div>
 
-      <div class="about-img"><img src="about-img.jpg" alt=""></div>
+      <div class="about-img"><img src="about-img.jpg" alt="Foto de Giuliano Ferreira"></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h1>Experiência</h1>
+
+    <div class="experience-card">
+      <div class="experience-header">
+        <h2>Auxiliar de Analista de Sistemas</h2>
+        <p class="experience-meta">Grupo Zancanaro · fev/2026 – atual · Brasília-DF</p>
+      </div>
+      <ul>
+        <li>Sustentação e suporte nos módulos de Compras, Financeiro, Estoque/Custos, Faturamento e Gestão do
+          Agronegócio.</li>
+        <li>Desenvolvimento de portal em PO UI (Angular) integrado ao Protheus via APIs REST em TLPP.</li>
+        <li>Rotinas em ADVPL/TLPP, como o estorno da eliminação de resíduo em pedidos de compra e a impressão de
+          etiquetas com QR Code.</li>
+        <li>Atualização de release 12.1.2410 → 12.1.2510 em quatro bases do grupo.</li>
+        <li>Ambiente Hyper-V, backup automatizado (BackupPro) e integração de NF-e (Qive).</li>
+      </ul>
     </div>
   </section>
 
   <section id="projects">
     <h1>Projetos</h1>
+
+    <div class="protheus-projects">
+      <div class="project-card">
+        <i class="fas fa-table-columns project-icon"></i>
+        <h2>Portal de Cadastros em PO UI</h2>
+        <p>Monitor de Produtos em Dynamic Table, com busca, busca avançada, ordenação e configuração de colunas, além
+          de telas de inclusão e alteração de produtos e cadastro de fornecedores.</p>
+        <div class="tags"><span>PO UI</span><span>Angular</span><span>TypeScript</span></div>
+      </div>
+
+      <div class="project-card">
+        <i class="fas fa-plug project-icon"></i>
+        <h2>APIs REST em TLPP</h2>
+        <p>Endpoints em TLPP que fornecem ao portal PO UI os dados de produtos e fornecedores do Protheus, permitindo
+          consulta, inclusão e alteração de registros.</p>
+        <div class="tags"><span>TLPP</span><span>REST</span><span>JSON</span></div>
+      </div>
+
+      <div class="project-card">
+        <i class="fas fa-qrcode project-icon"></i>
+        <h2>Etiquetas com QR Code</h2>
+        <p>Impressão de etiquetas de produto com QR Code (código e descrição) pelo spool do Protheus, disponível no
+          Cadastro de Produtos e direto da listagem do portal PO UI.</p>
+        <div class="tags"><span>ADVPL</span><span>TLPP</span><span>Impressão</span></div>
+      </div>
+
+      <div class="project-card">
+        <i class="fas fa-rotate-left project-icon"></i>
+        <h2>Estorno da Eliminação de Resíduo</h2>
+        <p>Botão na rotina de Pedido de Compra que estorna pedidos eliminados por resíduo, permitindo reativá-los sem
+          digitar um pedido novo.</p>
+        <div class="tags"><span>ADVPL</span><span>Compras</span></div>
+      </div>
+
+      <div class="project-card">
+        <i class="fas fa-server project-icon"></i>
+        <h2>Atualização de Release 2410 → 2510</h2>
+        <p>Virada de release em quatro bases: backup completo, atualização de AppServer, DbAccess, RPO e TSS, dicionário
+          via UPDDISTR e validação de stored procedures, menus e Smart View.</p>
+        <div class="tags"><span>AppServer</span><span>DbAccess</span><span>UPDDISTR</span></div>
+      </div>
+    </div>
+
+    <h2 class="sub-title">Análise de Dados (Power BI)</h2>
     <div class="pbi-projects">
       <iframe title="Challenge-MySQL-&-Power-BI" width="600" height="373.5"
         src="https://app.powerbi.com/view?r=eyJrIjoiYTgyZDM0NTktZGZjNy00Nzg4LTgyZGEtOGYxZmQyMWUxNDE4IiwidCI6IjdlNDA0OGJhLTMwNzUtNGQyNi1hYjg4LWNhNDhmZDRkY2MxNSJ9"
         frameborder="0" allowFullScreen="true"></iframe>
       <iframe title="DashboardVendas" width="600" height="373.5"
         src="https://app.powerbi.com/view?r=eyJrIjoiYWJkZTUwYjAtZTg2Zi00Y2U1LThiNmEtYWM2NDAwNzlhMjE1IiwidCI6IjdlNDA0OGJhLTMwNzUtNGQyNi1hYjg4LWNhNDhmZDRkY2MxNSJ9"
-        frameborder="0" allowFullScreen="true"></iframe>
-      <iframe title="financial_sample_chlg" width="600" height="373.5"
-        src="https://app.powerbi.com/view?r=eyJrIjoiZDllZjcxMTYtZWY1Mi00ODg4LTlmOWEtZTBmNWYzODIyMDZhIiwidCI6IjdlNDA0OGJhLTMwNzUtNGQyNi1hYjg4LWNhNDhmZDRkY2MxNSJ9"
-        frameborder="0" allowFullScreen="true"></iframe>
-      <iframe title="sample_financial" width="600" height="373.5"
-        src="https://app.powerbi.com/view?r=eyJrIjoiYjJkMWRjYWItZGQyZi00ZTVlLTliMzctNGU0ZTg1ZThlZTdjIiwidCI6IjdlNDA0OGJhLTMwNzUtNGQyNi1hYjg4LWNhNDhmZDRkY2MxNSJ9"
         frameborder="0" allowFullScreen="true"></iframe>
     </div>
   </section>
@@ -120,28 +185,27 @@
 
     <div class="services-container">
       <div class="service-card">
-        <h2>Processos ETL</h2>
-        <img class="icon-card" src="etl-process.png" alt="">
-        <p>Extração, transformação e carga de dados brutos para estruturas otimizadas, com foco em automação e
-          integridade.</p>
+        <h2>Desenvolvimento ADVPL/TLPP</h2>
+        <i class="fas fa-code service-icon"></i>
+        <p>Rotinas customizadas, pontos de entrada, relatórios e melhorias nos módulos de backoffice do Protheus.</p>
       </div>
       <div class="service-card">
-        <h2>Web Scraping</h2>
-        <img class="icon-card" src="web-scraping.png" alt="">
-        <p>Coleta automatizada de dados de sites e plataformas, com tratamento e estruturação para a devida análise.</p>
+        <h2>PO UI e APIs REST</h2>
+        <i class="fas fa-laptop-code service-icon"></i>
+        <p>Interfaces modernas e responsivas em PO UI (Angular), integradas ao Protheus por APIs REST em TLPP.</p>
       </div>
       <div class="service-card center-card">
-        <h2>Desenvolvimento Web</h2>
-        <img class="icon-card" src="des._web.png" alt="">
-        <p>Criação de interfaces modernas e responsivas, consumo de APIs, local/session storage e boas práticas de
-          UX/UI.</p>
+        <h2>Sustentação e Ambiente</h2>
+        <i class="fas fa-screwdriver-wrench service-icon"></i>
+        <p>Suporte a usuários, atualização de release, AppServer, DbAccess, TSS, dicionário de dados e validação de
+          ambiente.</p>
       </div>
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="footer-content">
-      <p>&copy; 2025 Giuliano Ferreira. Todos os direitos reservados.</p>
+      <p>&copy; 2026 Giuliano Ferreira. Todos os direitos reservados.</p>
       <div class="footer-social">
         <a href="https://github.com/giuthelink" target="_blank" aria-label="GitHub">
           <i class="fab fa-github"></i>
